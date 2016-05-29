@@ -1,0 +1,36 @@
+body{
+  background-color:#D4B26A;
+}
+.wrapper{
+  text-align:center;
+  width:200px;
+  margin: auto;
+  border: 2px solid black;
+  background: linear-gradient(#9dd2ea, #8bceec);
+  border-radius:10%;
+}
+.btn{
+  margin:auto;
+  line-height:20px;
+  width:40px;
+  
+  
+}
+.showText{
+ :1px;
+}
+#text{
+  text-align:center;
+  background-color:white;
+  box-sizing:border-box;
+  height:30px;
+  width:150px;
+  margin:auto;
+  border:
+ }
+#seperate{
+  height:20px;
+}
+#text{
+  background-color:green;
+}

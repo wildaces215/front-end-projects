@@ -1,8 +1,9 @@
+//Command event on click
 $('.btn').click( function(){
   search();
 });
 
-
+//Searches though wikipedia database
 function search(){
   var searchTitle=$(".inputText").val();
 $.ajax({
@@ -12,7 +13,7 @@ $.ajax({
     list:'search',
     srsearch: searchTitle,
     format:'json',
-    
+
   },
     dataType:'jsonp',
     success:function(data){
@@ -20,15 +21,15 @@ $.ajax({
   for(var x=0;x<10;x++){
     //console.log(data);
     /*create variable for html div */
-   html+="<div class='well'>"; 
+   html+="<div class='well'>";
     //append html to div class
     html+="<h5><a href='https://en.wikipedia.org/wiki/"+data.query.search[x].title.toString()+"'>"+data.query.search[x].title+"</a></h5>"
     html+="<p>"+data.query.search[x].snippet+"</p>"
     html+="</div>"
     $('.searchTitles').html(html);
-  } ;  
-  
-      
+  } ;
+
+
     }
  });
 };
